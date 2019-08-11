@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fea182;
+}
+
+.topWrapper {
+  flex: auto;
+  background-color: #fbfafb;
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  .leftContainer {
+    width: 200px;
+    flex: none;
+    border-right: solid 1px #f3f2f4;
+  }
+  .rightContainer {
+    flex: auto;
+    padding: 0 20px;
+    .rightTopBar {
+      height: 60px;
+      padding: 10px 0;
+    }
+    .contentContainer {
+    }
+  }
+}
+
+.bottomWrapper {
+  flex: none;
+  height: 100px;
+}

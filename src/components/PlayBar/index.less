@@ -1,0 +1,101 @@
+.root {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  height: 100%;
+}
+
+.songProfile {
+  width: 230px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  .songInfo {
+    vertical-align: top;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 10px;
+    width: 200px;
+    box-sizing: border-box;
+    > span {
+      display: block;
+    }
+    .songName {
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .songAuthor {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.controlPane {
+  width: 140px;
+  flex: none;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 18px;
+  > i {
+    cursor: pointer;
+  }
+}
+
+.playProgress {
+  flex: auto;
+  padding: 0 25px;
+  font-size: 10px;
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  .beginTime {
+    flex: none;
+  }
+  .bar {
+    flex: auto;
+    position: relative;
+    margin: 0 12px;
+    height: 100%;
+    .progressCenter {
+      height: 2px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.15);
+      margin-top: 14px;
+      > div {
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 40%;
+        height: 100%;
+      }
+    }
+    .position {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 100%;
+      left: 40%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .endTime {
+    flex: none;
+  }
+}
+.volume {
+  width: 30px;
+  flex: none;
+  color: #fff;
+  font-size: 16px;
+  &:hover {
+    font-size: 18px;
+  }
+}
