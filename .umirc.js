@@ -9,7 +9,7 @@ export default {
         antd: true,
         dva: true,
         dynamicImport: false,
-        title: 'umi-dva',
+        title: 'mmusic',
         dll: false,
         routes: {
           exclude: [/components\//],

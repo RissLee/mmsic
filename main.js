@@ -1,5 +1,6 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -12,6 +13,8 @@ function createWindow() {
     height: 680,
     webPreferences: {
       nodeIntegration: true,
+      webSecurity: false,
+      preload: path.join(__dirname, './public/renderer.js'), // 但预加载的 js 文件内仍可以使用 Nodejs 的 API
     },
   });
 
