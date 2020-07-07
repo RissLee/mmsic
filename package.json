@@ -36,7 +36,7 @@
     "@types/crypto-js": "^3.1.43",
     "babel-eslint": "^9.0.0",
     "cross-env": "^5.2.0",
-    "electron": "^5.0.0",
+    "electron": "^7.2.4",
     "eslint": "^5.4.0",
     "eslint-config-umi": "^1.4.0",
     "eslint-plugin-flowtype": "^2.50.0",
